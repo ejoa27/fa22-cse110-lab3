@@ -1,3 +1,34 @@
 body {
     background-color: #FFEEDB;
 }
+
+h1 {
+    font-family: "Lucida Handwriting";
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Courier New";
+    font-size: 40px;
+}
+
+h3 {
+    font: Arial;
+    font-size: 30px;
+}
+
+.home-page{
+    font-size: 40px;
+}
+
+.sign-up{
+    font-size: 2vw;
+}
+
+#concern{
+    font-size: 2vh;
+}
+
+#made-by{
+    font-size: 2vw;
+}
