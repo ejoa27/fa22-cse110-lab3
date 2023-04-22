@@ -1,3 +1,22 @@
 body {
     background-color: #d9e6f2;
 }
+
+h1 {
+    font-family: "Lucida Handwriting";
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Courier New";
+    font-size: 40px;
+}
+
+h3 {
+    font: Arial;
+    font-size: 30px;
+}
+
+.home-page{
+    font-size: 40px;
+}
