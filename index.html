@@ -36,63 +36,62 @@
         </header>
 
         <main>
-            <section>
-            <div class="brainstorming-notes">
-                <h2><span class = "project-step">Brainstorming</span></h2>
-                <h3>Meeting 1 (DATE)</h3>
-                <video controls src="Video.mp4">Meeting 1 video</video>
-                <br>
-                <audio controls src="Audio.mp3">Meeting 1 audio</audio>
-                <ol>
-                <li><h4 id="Topics-to-cover">Topics to cover this meeting:</h4>
-                    <ul>
-                    <li><s>(Topic 1)</s></li>
-                    <li><s>(Topic 2)</s></li>
-                    </ul>
-                </li>
-                <li><h4 id="Topics-note">Topic Notes:</h4>
-                    <ul>
-                    <li><strong>(Note 1)</strong></li>
-                    <li>(Note 2)</li>
-                    <li><p>(Paragraph long <br>note Note 3)</p></li>
-                    </ul>
-                </li>
-                <li><h4 id="Topics-concerns-goals">Topics/concerns/goals for next meeting:</h4>
-                    <ul>
-                      <li>(Topic 5)</li>
-                      <li>(Concern 1)</li>
-                      <li>(Goal 1)</li>
-                      <li>(Goal 2)</li>
-                      <li><p>Possible design</p>
-                      <img src="Design.png" alt="Possible website design"></li>
-                    </ul>
-                </li>
-                </ol>
-            </div>
-            </section>
-            <h2>Check-in Form</h2>
-            <form action="" method="get" class="check-in-form">
-            <div class="sign-up">
-                <label for="name">Enter your name: </label>
-                <input type="text" name="name" id="name" required>
-                <div class="sign-up-submit">
-                    <input type="submit" value="Check in">
-                </div>
-            </div>
-            <h2>Attendance List</h2>
-            <ul>
-                <li>Meeting 1:</li>
-                <ul>
-                    <li>Elvis Joa</li>
-                    <li>Name</li>
-                    <li>Name</li>
-                    <li>Name</li>
-                </ul>
-            </ul>
+          <section>
+          <div class="brainstorming-notes">
+              <h2><span class = "project-step">Brainstorming</span></h2>
+              <h3>Meeting 1 (DATE)</h3>
+              <video controls src="Video.mp4">Meeting 1 video</video>
+              <br>
+              <audio controls src="Audio.mp3">Meeting 1 audio</audio>
+              <ol>
+              <li><h4 id="Topics-to-cover">Topics to cover this meeting:</h4>
+                  <ul>
+                  <li><s>(Topic 1)</s></li>
+                  <li><s>(Topic 2)</s></li>
+                  </ul>
+              </li>
+              <li><h4 id="Topics-note">Topic Notes:</h4>
+                  <ul>
+                  <li><strong>(Note 1)</strong></li>
+                  <li>(Note 2)</li>
+                  <li><p>(Paragraph long <br>note Note 3)</p></li>
+                  </ul>
+              </li>
+              <li><h4 id="Topics-concerns-goals">Topics/concerns/goals for next meeting:</h4>
+                  <ul>
+                    <li>(Topic 5)</li>
+                    <li>(Concern 1)</li>
+                    <li>(Goal 1)</li>
+                    <li>(Goal 2)</li>
+                    <li><p>Possible design</p>
+                    <img src="Design.png" alt="Possible website design"></li>
+                  </ul>
+              </li>
+              </ol>
+          </div>
+          </section>
+          <h2>Check-in Form</h2>
+          <form action="" method="get" class="check-in-form">
+          <div class="sign-up">
+              <label for="name">Enter your name: </label>
+              <input type="text" name="name" id="name" required>
+              <div class="sign-up-submit">
+                  <input type="submit" value="Check in">
+              </div>
+          </div>
+          <h2>Attendance List</h2>
+          <ul id="attendance-names">
+            <li>Elvis Joa</li>
+            <li>Name</li>
+            <li>Name</li>
+            <li>Name</li>
+          </ul>
 
+          <section id="submit-concern">
             <h2>Submit a concern about a meeting</h2>
-            <textarea id="story" name="story" rows="5" cols="33">Write here</textarea>
+            <textarea id="concern" name="concern" rows="5" cols="33">Write here</textarea>
             <br>
+            
             <label for="concern-topic">Choose the topic of concern:</label>
             <input list="topic" id="concern-topic" name="concern-topic">
             <datalist id="topic">
@@ -128,7 +127,11 @@
               </fieldset>
             </form>
             <button class="concern-submit" type="button">Submit</button>
-
+          </section>
         </main>
+
+        <footer>
+          <p id="made-by"><b><i>Made by Elvis Joa</i></b></p>
+        </footer>
     </body>
 </html>
