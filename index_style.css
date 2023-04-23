@@ -12,6 +12,7 @@ h1 {
     font-family: "Lucida Handwriting";
     font-size: 50px;
     text-align: center;
+    position: static;
 }
 
 /* Uses text-decoration*/
@@ -86,6 +87,8 @@ nav {
 /* Uses relative units*/
 #made-by {
     font-size: 2vw;
+    position: relative;
+    left: 82%;
 }
 
 /* Uses display*/
