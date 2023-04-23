@@ -49,6 +49,21 @@ nav {
     height: 250px;
 }
 
+/* Uses flexbox*/
+#attendance-names {
+    display:flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#attendance-names > div {
+    background-color: #edd8c0;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
 /* Uses relative units*/
 .sign-up {
     font-size: 2vw;
@@ -79,9 +94,22 @@ nav {
     display: inline;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: [type] auto [content-input] 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 10px;
+}
+
+.wrapper > label  {
+    grid-column: labels;
+    grid-row: auto;
+}
+
 /* Text colors*/
 #dog {
-    color: rgb(94, 28, 28);
+    color: #f3b33e;
 }
 
 #cat {

@@ -76,54 +76,65 @@
                     <input id="sign-up-submit" type="button" value="Check in">
                 </div>
                 <h2>Attendance List</h2>
-                <ul id="attendance-names">
-                    <li>Elvis Joa</li>
-                    <li>Name</li>
-                    <li>Name</li>
-                    <li>Name</li>
-                </ul>
+                <div id="attendance-names">
+                    <div>Elvis Joa</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    
+                </div>
             </section>
 
-            <section id="submit-concern">
-                <h2>Submit a concern</h2>
-                <textarea id="concern" name="concern" rows="5" cols="90">Write here</textarea>
-                <br>
-                
-                <label for="concern-topic">Choose the topic of concern:</label>
-                <input list="topic" id="concern-topic" name="concern-topic">
-                <datalist id="topic">
-                    <option value="Design"></option>
-                    <option value="Programming"></option>
-                    <option value="Merging"></option>
-                    <option value="Other"></option>
-                </datalist>
-                <br>
-                <label for="meeting-rate">How would you rate this meeting:</label>
-                <select name="meetings" id="meeting-select">
-                    <option value="">--Please rate this meeting--</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
+            <section class="concern-section">
+                <form>
+                    <h2>Submit a concern or feedback</h2>
+                    <div class="wrapper">
+                        <div><label for="concern-name">Enter your name: </label></div>
+                        <div><input type="text" name="concern-name" id="concern-name" required></div>
+                        <div><label for="concern-email">Enter your email: </label></div>
+                        <div><input type="text" name="concern-email" id="concern-email" required></div>
+                        <div><label for="concern-feedback">Type your concern/feedback: </label></div>
+                        <div><textarea id="concern" name="concern" rows="5" cols="90">Write here</textarea></div>
+                    </div>
+                    
+                    <label for="concern-topic">Choose the topic of concern:</label>
+                    <input list="topic" id="concern-topic" name="concern-topic">
+                    <datalist id="topic">
+                        <option value="Design"></option>
+                        <option value="Programming"></option>
+                        <option value="Merging"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                    <br>
+                    <label for="meeting-rate">How would you rate this meeting:</label>
+                    <select name="meetings" id="meeting-select">
+                        <option value="">--Please rate this meeting--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
 
-                <form id ="favorite-animal">
-                    <fieldset>
-                        <legend>Choose your favorite Animal</legend>
-                    
-                        <input type="radio" name="animal" value="D">
-                        <label for="dog" id="dog">Dog</label><br>
-                    
-                        <input type="radio" name="animal" value="C">
-                        <label for="cat" id="cat">Cat</label><br>
-                    
-                        <input type="radio" name="animal" value="P">
-                        <label for="parrot" id="parrot">Parrot</label>
-                    </fieldset>
+                    <form id ="favorite-animal">
+                        <fieldset>
+                            <legend>Choose your favorite Animal</legend>
+                        
+                            <input type="radio" name="animal" value="D">
+                            <label for="dog" id="dog">Dog</label><br>
+                        
+                            <input type="radio" name="animal" value="C">
+                            <label for="cat" id="cat">Cat</label><br>
+                        
+                            <input type="radio" name="animal" value="P">
+                            <label for="parrot" id="parrot">Parrot</label>
+                        </fieldset>
+                    </form>
+                    <button class="concern-submit" type="button">Submit</button>
                 </form>
-                <button class="concern-submit" type="button">Submit</button>
             </section>
         </main>
 
