@@ -1,2 +1,2 @@
 # Lab 3 - Starter
-https://ejoa27.github.io/fa22-cse110-lab3/
+https://ejoa27.github.io/sp23-cse110-lab3/
