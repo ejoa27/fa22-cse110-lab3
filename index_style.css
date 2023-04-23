@@ -7,14 +7,18 @@ body {
     background-color: #FFEEDB;
 }
 
+/* Uses text-align*/
 h1 {
     font-family: "Lucida Handwriting";
     font-size: 50px;
+    text-align: center;
 }
 
+/* Uses text-decoration*/
 h2 {
     font-family: "Courier New";
     font-size: 40px;
+    text-decoration-line: underline;
 }
 
 h3 {
@@ -24,10 +28,23 @@ h3 {
 
 /*Uses short padding and margin auto*/
 nav {
-    font-size: 40px;
+    font-size: 20px;
     margin: auto;
     padding: 10px 20px 10px 10px;
-    border: 5px solid black;
+    border: 2px solid black;
+}
+
+/* Text colors*/
+#dog {
+    color: rgb(94, 28, 28);
+}
+
+#cat {
+    color: black;
+}
+
+#parrot {
+    color: red;
 }
 
 /* Uses relative units*/
