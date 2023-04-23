@@ -34,6 +34,38 @@ nav {
     border: 2px solid black;
 }
 
+li {
+    display: block;
+}
+
+
+/* Uses relative units*/
+.sign-up {
+    font-size: 2vw;
+}
+
+/* Uses relative units*/
+#concern {
+    font-size: 2vh;
+}
+
+/*Uses long margin, and padding, and borders. Display inline*/
+.sign-up {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    display: inline;
+}
+
 /* Text colors*/
 #dog {
     color: rgb(94, 28, 28);
@@ -48,32 +80,10 @@ nav {
 }
 
 /* Uses relative units*/
-.sign-up {
-    font-size: 2vw;
-}
-
-/* Uses relative units*/
-#concern {
-    font-size: 2vh;
-}
-
-/*Uses long margin, and padding, and borders*/
-.sign-up {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 50px;
-    border-style: dashed;
-    border-color: black;
-    border-width: 5px;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/* Uses relative units*/
 #made-by {
     font-size: 2vw;
+}
+
+#smiley-face{
+    display: none;
 }

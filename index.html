@@ -65,68 +65,71 @@
                   </ul>
               </li>
               </ol>
-          </div>
-          </section>
-          <h2>Check-in Form</h2>
-          <form action="" method="get" class="check-in-form">
-          <div class="sign-up">
-              <label for="name">Enter your name: </label>
-              <input type="text" name="name" id="name" required>
-              <input id="sign-up-submit" type="submit" value="Check in">
-          </div>
-          <h2>Attendance List</h2>
-          <ul id="attendance-names">
-            <li>Elvis Joa</li>
-            <li>Name</li>
-            <li>Name</li>
-            <li>Name</li>
-          </ul>
+            </div>
+            </section>
+            <section>
+                <h2>Check-in Form</h2>
+                <form action="" method="get" class="check-in-form">
+                <div class="sign-up">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                    <input id="sign-up-submit" type="submit" value="Check in">
+                </div>
+                <h2>Attendance List</h2>
+                <ul id="attendance-names">
+                    <li>Elvis Joa</li>
+                    <li>Name</li>
+                    <li>Name</li>
+                    <li>Name</li>
+                </ul>
+            </section>
 
-          <section id="submit-concern">
-            <h2>Submit a concern</h2>
-            <textarea id="concern" name="concern" rows="5" cols="90">Write here</textarea>
-            <br>
-            
-            <label for="concern-topic">Choose the topic of concern:</label>
-            <input list="topic" id="concern-topic" name="concern-topic">
-            <datalist id="topic">
-                <option value="Design"></option>
-                <option value="Programming"></option>
-                <option value="Merging"></option>
-                <option value="Other"></option>
-            </datalist>
-            <br>
-            <label for="meeting-rate">How would you rate this meeting:</label>
-            <select name="meetings" id="meeting-select">
-                <option value="">--Please rate this meeting--</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <br>
+            <section id="submit-concern">
+                <h2>Submit a concern</h2>
+                <textarea id="concern" name="concern" rows="5" cols="90">Write here</textarea>
+                <br>
+                
+                <label for="concern-topic">Choose the topic of concern:</label>
+                <input list="topic" id="concern-topic" name="concern-topic">
+                <datalist id="topic">
+                    <option value="Design"></option>
+                    <option value="Programming"></option>
+                    <option value="Merging"></option>
+                    <option value="Other"></option>
+                </datalist>
+                <br>
+                <label for="meeting-rate">How would you rate this meeting:</label>
+                <select name="meetings" id="meeting-select">
+                    <option value="">--Please rate this meeting--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
 
-            <form>
-              <fieldset>
-                <legend>Choose your favorite Animal</legend>
-            
-                <input type="radio" name="animal" value="D">
-                <label for="dog" id="dog">Dog</label><br>
-            
-                <input type="radio" name="animal" value="C">
-                <label for="cat" id="cat">Cat</label><br>
-            
-                <input type="radio" name="animal" value="P">
-                <label for="parrot" id="parrot">Parrot</label>
-              </fieldset>
-            </form>
-            <button class="concern-submit" type="button">Submit</button>
-          </section>
+                <form id ="favorite-animal">
+                    <fieldset>
+                        <legend>Choose your favorite Animal</legend>
+                    
+                        <input type="radio" name="animal" value="D">
+                        <label for="dog" id="dog">Dog</label><br>
+                    
+                        <input type="radio" name="animal" value="C">
+                        <label for="cat" id="cat">Cat</label><br>
+                    
+                        <input type="radio" name="animal" value="P">
+                        <label for="parrot" id="parrot">Parrot</label>
+                    </fieldset>
+                </form>
+                <button class="concern-submit" type="button">Submit</button>
+            </section>
         </main>
 
         <footer>
           <p id="made-by"><b><i>Made by Elvis Joa</i></b></p>
+          <p id="smiley-face"> Hidden Smiley face: :)</p>
         </footer>
     </body>
 </html>
