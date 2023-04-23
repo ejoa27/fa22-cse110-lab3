@@ -10,11 +10,8 @@
         <header>
         <h1>CSE110 Group 27 Meeting #1</h1>
         
-        <nav class="home-page">
+        <nav class="index">
             <a href=home-page.html>Home Page</a>
-        </nav>
-
-        <nav class="index-list">
             <h2>Index List</h2>
             <ul>
                 <li><a href=#Topics-to-cover>Topics to cover</a></li>
@@ -54,7 +51,7 @@
                   <ul>
                   <li><strong>(Note 1)</strong></li>
                   <li>(Note 2)</li>
-                  <li><p>(Paragraph long <br>note Note 3)</p></li>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam, felis ornare ornare placerat, mi purus varius justo, sit amet tempor lorem tortor a lorem. Pellentesque euismod ac ante sit amet ornare. Phasellus vestibulum nunc ornare tempor ultricies. Donec nibh turpis, fermentum accumsan lectus in, hendrerit aliquet risus. Etiam erat mauris, imperdiet et tortor at, lacinia mollis lacus. Maecenas feugiat justo dolor, quis porta arcu ultricies et. Cras molestie nibh vitae ligula facilisis, ut fringilla magna scelerisque.</p></li>
                   </ul>
               </li>
               <li><h4 id="Topics-concerns-goals">Topics/concerns/goals for next meeting:</h4>
@@ -63,8 +60,8 @@
                     <li>(Concern 1)</li>
                     <li>(Goal 1)</li>
                     <li>(Goal 2)</li>
-                    <li><p>Possible design</p>
-                    <img src="Design.png" alt="Possible website design"></li>
+                    <li><p>Possible design:</p>
+                    <img src="Design.png" id="possible-img" alt="Possible website design"></li>
                   </ul>
               </li>
               </ol>
@@ -75,9 +72,7 @@
           <div class="sign-up">
               <label for="name">Enter your name: </label>
               <input type="text" name="name" id="name" required>
-              <div class="sign-up-submit">
-                  <input type="submit" value="Check in">
-              </div>
+              <input id="sign-up-submit" type="submit" value="Check in">
           </div>
           <h2>Attendance List</h2>
           <ul id="attendance-names">
@@ -88,8 +83,8 @@
           </ul>
 
           <section id="submit-concern">
-            <h2>Submit a concern about a meeting</h2>
-            <textarea id="concern" name="concern" rows="5" cols="33">Write here</textarea>
+            <h2>Submit a concern</h2>
+            <textarea id="concern" name="concern" rows="5" cols="90">Write here</textarea>
             <br>
             
             <label for="concern-topic">Choose the topic of concern:</label>
