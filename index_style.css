@@ -26,6 +26,14 @@ h3 {
     font: Arial;
     font-size: 30px;
 }
+/* Any button over which the user's pointer is hovering */
+button:hover {
+  color: rgb(255, 255, 255);
+}
+
+button:active {
+    color: blue;
+}
 
 /*Uses short padding and margin auto*/
 nav {
