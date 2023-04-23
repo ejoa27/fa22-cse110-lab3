@@ -11,23 +11,23 @@
             <h1>CSE110 Group 27 Meeting #2</h1>
             
             <nav class="index">
-                <a href=home-page.html>Home Page</a>
+                <a class="home-link" href=home-page.html>Home Page</a>
                 <h2>Index List</h2>
                 <ul>
-                    <li><a href=#Topics-to-cover>Topics to cover</a></li>
-                    <li><a href=#Topics-note>Notes</a></li>
-                    <li><a href=#Topics-concerns-goals>Topics/Concerns/Goals</a></li>
+                    <li class="index"><a href=#Topics-to-cover>Topics to cover</a></li>
+                    <li class="index"><a href=#Topics-note>Notes</a></li>
+                    <li class="index"><a href=#Topics-concerns-goals>Topics/Concerns/Goals</a></li>
                 </ul>
             </nav>
 
             <div class="font-meaning">
                 <details>
-                <summary>Meaning of fonts</summary>
-                <ul>
-                    <li><s>Strikethrough means the topic/goal was completed</s></li>
-                    <li><strong>Strong means the topic/goal is important and has to be prioritized</strong></li>
-                    <li><em>Emphasis means the topic/goal is emphasized</em></li>
-                </ul>
+                    <summary>Meaning of fonts</summary>
+                    <ul>
+                        <li><s>Strikethrough means the topic/goal was completed</s></li>
+                        <li><strong>Strong means the topic/goal is important and has to be prioritized</strong></li>
+                        <li><em>Emphasis means the topic/goal is emphasized</em></li>
+                    </ul>
                 </details>
             </div>
         </header>
@@ -62,27 +62,28 @@
                     </ol>
                 </div>
             </section>
-            <h2>Check-in Form</h2>
-            <br>
-            <form action="" method="get" class="check-in-form">
-            <div class="sign-up">
-                <label for="name">Enter your name: </label>
-                <input type="text" name="name" id="name" required>
-                <input id="sign-up-submit" type="submit" value="Check in">
-            </div>
-            <h2>Attendance List</h2>
-            <ul>
-                <li>Meeting 2:</li>
-                <ul>
-                    <li>Elvis Joa</li>
-                    <li>Name</li>
-                    <li>Name</li>
-                    <li>Name</li>
-                </ul>
-            </ul>
+            <section>
+                <h2>Check-in Form</h2>
+                <br>
+                <form action="" method="get" class="check-in-form">
+                <div class="sign-up">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required>
+                    <input id="sign-up-submit" type="button" value="Check in">
+                </div>
+                <h2>Attendance List</h2>
+                <div id="attendance-names">
+                    <div>Elvis Joa</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                    <div>Name</div>
+                </div>
+            </section>
 
             <section class="concern-section">
-                <form>
+                <form> 
                     <h2>Submit a concern or feedback</h2>
                     <div class="wrapper">
                         <div><label for="concern-name">Enter your name: </label></div>
@@ -131,9 +132,11 @@
                 </form>
             </section>
         </main>
+
         <footer>
             <p id="made-by"><b><i>Made by Elvis Joa</i></b></p>
             <p id="smiley-face"> Hidden Smiley face: :)</p>
         </footer>
+        <p>Hi there!</p>
     </body>
 </html>

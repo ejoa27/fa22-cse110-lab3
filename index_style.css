@@ -1,14 +1,15 @@
-/*Uses short margin*/
+/*Universal selector: uses short margin*/
 * {
     margin: 10px 50px 10px 10px;
 }
 
+/*Loads font*/
 @font-face {
     font-family: "brunoFont";
     src: url("BrunoAceSC-Regular.ttf");
-  }
+}
 
-/* Media query*/
+/* Uses media query, fix size for screens under 500px width*/
 @media (max-width: 500px) {
     #possible-img {
         height: 100px;
@@ -16,11 +17,12 @@
     }
 }
 
+/*Changes the background's color*/
 body {
     background-color: #FFEEDB;
 }
 
-/* Uses text-align*/
+/* h1 elements: uses the loaded font from google*/
 h1 {
     font-family: "brunoFont";
     font-size: 50px;
@@ -28,27 +30,30 @@ h1 {
     position: static;
 }
 
-/* Uses text-decoration*/
+/* h2 elements: uses the loaded font from google*/
 h2 {
     font-family: "brunoFont";
     font-size: 40px;
     text-decoration-line: underline;
 }
 
+/*h3 elements*/
 h3 {
     font: Arial;
     font-size: 30px;
 }
-/* Any button over which the user's pointer is hovering */
+
+/* Submit button's text changes to white when hovered over */
 button:hover {
   color: rgb(255, 255, 255);
 }
 
+/* Submit button's text changes to blue when pressed */
 button:active {
     color: blue;
 }
 
-/*Uses short padding and margin auto*/
+/*nav elements have fixed size*/
 nav {
     font-size: 20px;
     margin: auto;
@@ -56,24 +61,31 @@ nav {
     border: 2px solid black;
 }
 
+/* All listed elements in nav have class "index" and will have fixed font size*/
 li[class="index"] {
     font-size: 30px;
 }
 
+/* Div after nav will have font size 20px at the top*/
+nav + div{
+    font-size: 20px;
+}
 
-/* Uses width and height*/
+
+/* Puts a fix size on the image*/
 #possible-img {
     width: 500px;
     height: 250px;
 }
 
-/* Uses flexbox*/
+/* Uses flexbox on the name in the attendance list*/
 #attendance-names {
     display:flex;
     padding: 10px;
     flex-wrap: wrap;
 }
 
+/*Determines the boxes that contains the names*/
 #attendance-names > div {
     background-color: #edd8c0;
     flex-grow: 1;
@@ -82,13 +94,9 @@ li[class="index"] {
     font-size: 30px;
   }
 
-/* Uses relative units*/
-.sign-up {
+/* Uses relative units for the check-in elements*/
+.sign-up, #name, #sign-up-submit  {
     font-size: 2vw;
-}
-
-#name, #sign-up-submit {
-    font-size: 20px;
 }
 
 /* Uses relative units, min-width and max-width*/
@@ -99,7 +107,7 @@ li[class="index"] {
     max-width: 75%;
 }
 
-/*Uses long margin, and padding, and borders. Display inline*/
+/* Details for the check-in box border*/
 .sign-up {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -116,6 +124,7 @@ li[class="index"] {
     display: inline;
 }
 
+/* Details for the submit a concern grid*/
 .wrapper {
     display: grid;
     grid-template-columns: [type] auto [content-input] 1fr;
@@ -133,16 +142,18 @@ li[class="index"] {
     margin-right: 10px;
 }
 
+/* All list elements in a list have fixed font size 25px*/
 ol > li {
     font-size: 25px;
 }
 
+/* First paragraph will be bold and font size 20px*/
 p:first-child{
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Text colors*/
+/* Text details for the animal optinos at the end*/
 #dog, #cat, #parrot {
     font-size: 20px;
     margin-left: 0px;
@@ -150,14 +161,6 @@ p:first-child{
 
 input[type="radio"] {
     margin-right: 20px;
-}
-
-nav + div{
-    font-size: 20px;
-}
-
-footer ~ p {
-    font-size: 20px;
 }
 
 #dog {
@@ -172,18 +175,24 @@ footer ~ p {
     color: red;
 }
 
+/* Size of the submit button*/
 button.concern-submit {
     font-size: 20px;
 }
 
-/* Uses relative units*/
+/*Any p element after footer will have font size 15px*/
+footer ~ p {
+    font-size: 15px;
+}
+
+/* Made by text has relative size and is always bottom right*/
 #made-by {
-    font-size: 2vw;
+    font-size: 1.5vw;
     position: relative;
     left: 82%;
 }
 
-/* Uses display*/
+/* Hide a smiley face at the end*/
 #smiley-face{
     display: none;
 }
