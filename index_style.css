@@ -34,19 +34,23 @@ nav {
     border: 2px solid black;
 }
 
-li {
-    display: block;
+/* Uses width and height*/
+#possible-img {
+    width: 500px;
+    height: 250px;
 }
-
 
 /* Uses relative units*/
 .sign-up {
     font-size: 2vw;
 }
 
-/* Uses relative units*/
+/* Uses relative units, min-width and max-width*/
 #concern {
     font-size: 2vh;
+    margin: auto;
+    min-width: 400px;
+    max-width: 75%;
 }
 
 /*Uses long margin, and padding, and borders. Display inline*/
@@ -84,6 +88,7 @@ li {
     font-size: 2vw;
 }
 
+/* Uses display*/
 #smiley-face{
     display: none;
 }
