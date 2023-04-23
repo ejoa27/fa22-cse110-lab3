@@ -1,6 +1,6 @@
 /*Uses short margin*/
-html {
-    margin: 0px 50px 0px 20px;
+* {
+    margin: 10px 50px 10px 10px;
 }
 
 @font-face {
@@ -56,6 +56,11 @@ nav {
     border: 2px solid black;
 }
 
+li[class="index"] {
+    font-size: 30px;
+}
+
+
 /* Uses width and height*/
 #possible-img {
     width: 500px;
@@ -80,6 +85,10 @@ nav {
 /* Uses relative units*/
 .sign-up {
     font-size: 2vw;
+}
+
+#name, #sign-up-submit {
+    font-size: 20px;
 }
 
 /* Uses relative units, min-width and max-width*/
@@ -120,7 +129,37 @@ nav {
     grid-row: auto;
 }
 
+.wrapper div{
+    margin-right: 10px;
+}
+
+ol > li {
+    font-size: 25px;
+}
+
+p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* Text colors*/
+#dog, #cat, #parrot {
+    font-size: 20px;
+    margin-left: 0px;
+}
+
+input[type="radio"] {
+    margin-right: 20px;
+}
+
+nav + div{
+    font-size: 20px;
+}
+
+footer ~ p {
+    font-size: 20px;
+}
+
 #dog {
     color: #f3b33e;
 }
@@ -131,6 +170,10 @@ nav {
 
 #parrot {
     color: red;
+}
+
+button.concern-submit {
+    font-size: 20px;
 }
 
 /* Uses relative units*/
