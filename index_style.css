@@ -3,6 +3,13 @@ html {
     margin: 0px 50px 0px 20px;
 }
 
+@media (max-width: 500px) {
+    #possible-img {
+        height: 100px;
+        width: 200px;
+    }
+}
+
 body {
     background-color: #FFEEDB;
 }
